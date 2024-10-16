@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
 app.get("/", (req, res) => {
-  res.render("solution.ejs");
+  res.render("index.ejs");
 });
 
 app.post("/submit", (req, res) => {
@@ -24,7 +24,7 @@ app.post("/submit", (req, res) => {
 
 
 
-  res.render("solution.ejs", { fullName, reason, currentDate });
+  res.render("index.ejs", { fullName, reason, currentDate });
 
 
 
